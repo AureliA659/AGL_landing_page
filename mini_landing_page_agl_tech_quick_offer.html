@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get More Clients in 24h</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(88, 28, 135, 0.85) 50%, rgba(15, 23, 42, 0.85) 100%),
+                  url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&h=1080&fit=crop&crop=entropy') center/cover;
+      background-attachment: fixed;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="text-white font-sans min-h-screen relative">
+    <div class="relative z-10">
+
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 md:px-6 py-12 text-center relative overflow-hidden">
+    
+    <!-- Decorative elements -->
+    <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+    <div class="absolute -bottom-8 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+    
+    <div class="relative z-10 max-w-2xl mx-auto w-full px-4">
+      
+      <h1 class="text-5xl md:text-6xl font-bold mb-8 animate-in bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
+        Get More Clients in 24h
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-200 mb-12 animate-in delay-1 leading-relaxed">
+        I build simple, powerful pages that send customers directly to your WhatsApp.
+        <span class="block mt-2"><strong>No subscription. No headache. Just results.</strong></span>
+      </p>
+
+      <div class="glass rounded-3xl p-8 md:p-12 max-w-2xl w-full mb-8 animate-in delay-2 shadow-2xl mx-auto border border-green-400/30">
+        <!-- What you get section -->
+        <h2 class="text-2xl font-semibold mb-8 text-transparent bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-center">What you get</h2>
+        <ul class="text-center space-y-4 mb-10 flex flex-col items-center">
+          <li class="flex items-center text-gray-100 justify-center">
+            <span class="text-2xl mr-4">✨</span>
+            <span>Simple professional page</span>
+          </li>
+          <li class="flex items-center text-gray-100 justify-center">
+            <span class="text-2xl mr-4">💬</span>
+            <span>WhatsApp contact button</span>
+          </li>
+          <li class="flex items-center text-gray-100 justify-center">
+            <span class="text-2xl mr-4">📱</span>
+            <span>Mobile optimized</span>
+          </li>
+          <li class="flex items-center text-gray-100 justify-center">
+            <span class="text-2xl mr-4">⚡</span>
+            <span>Delivered in 24h</span>
+          </li>
+        </ul>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-400/20 my-10"></div>
+
+        <!-- Pricing section -->
+        <p class="text-sm text-gray-300 mb-6 uppercase tracking-widest font-semibold text-center">🎯 Limited Time Offer</p>
+        
+        <div class="text-center mb-8">
+          <p class="text-gray-100 mb-3 text-sm">Starting at</p>
+          <p class="text-6xl font-bold text-transparent bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text mb-2">300₪</p>
+          <p class="text-gray-300 text-sm">One-time payment, no recurring fees</p>
+        </div>
+
+        <a href="https://wa.me/33753486483" target="_blank"
+           class="w-full block text-center bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 text-white font-semibold px-10 py-4 rounded-xl text-lg transition transform hover:scale-105 shadow-lg hover:shadow-green-500/50">
+          💬 Contact me on WhatsApp
+        </a>
+      </div>
+
+      <p class="text-sm text-gray-400 mt-10 animate-in delay-4">AGL Tech – Fast. Simple. Effective.</p>
+
+    </div>
+
+  </div>
+
+    </div>
+</body>
+</html>
